@@ -11,7 +11,7 @@ const detailsEle = document.getElementById("recipeDetailsContainer")
 function loadRceip(res){
 detailsEle.innerHTML = `
 <h2 class="title">${res.title}</h2>
-<h3>Ingredients:</h3>
+<h2>Ingredients:</h2>
 <ul>${res.ingredients.map(function(ingredient){
     return "<li>"+ingredient+"</li>"
 }).join("")}</ul>
